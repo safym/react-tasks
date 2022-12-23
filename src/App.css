@@ -1,0 +1,123 @@
+:root {
+  --index: calc(1vh + 1vw);
+  --header-color: rgb(83, 55, 116);
+  --second-color: rgb(150, 111, 194);
+  --third-color: rgba(119, 0, 255, 0.095);;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-wrapper,
+.example-wrapper {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: inline-block;
+}
+
+.task-wrapper {
+  margin: calc(1 * var(--index));
+  padding-left: calc(3 * var(--index));
+  padding-right: calc(3 * var(--index));
+  padding-bottom: calc(1 * var(--index));
+
+  width: 55%;
+}
+
+h1,
+h2 {
+  color: var(--header-color);
+}
+
+hr {
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--second-color);
+}
+
+.task-solution * {
+  font-size: large;
+  line-height: 1.5;
+  margin-left:  calc(0.5 * var(--index));
+  margin-right:  calc(0.5 * var(--index));
+}
+
+.example-wrapper {
+  margin:  calc(2 * var(--index));
+  display: inline-block;
+  background-color: var(--third-color);
+}
+
+.task-solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result {
+  width: 50%;
+}
+
+.example-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: calc(1 * var(--index));
+  margin-bottom: calc(1 * var(--index));
+}
+
+.list-item {
+  margin-left: 0;
+  margin-top: calc(0.5 * var(--index));;
+}
+
+
+/* Input */
+input {
+  border-radius: 15px;
+  padding-left: 15px;
+  outline: none;
+  border: 2px solid #e8e1eb;
+}
+
+input:hover {
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+}
+
+input::selection, input:focus{
+  border-color: var(--header-color);
+}
+
+/* Button*/
+button {
+  border-radius: 50px;
+  background-color: #f8f9fa;
+  border: 2px solid #e8e1eb;
+  border-radius: 15px;
+  color: rgb(83, 55, 116);
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+  max-height: 100px;
+}
+
+button:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+}
+
+button:active {
+  border-color: var(--header-color);
+  outline: none;
+}
