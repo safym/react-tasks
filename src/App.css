@@ -121,3 +121,20 @@ button:active {
   border-color: var(--header-color);
   outline: none;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .task-wrapper {
+    display: inline-block;
+    width: 90%;
+  }
+
+  .example-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result {
+    display: flex;
+  }
+}
