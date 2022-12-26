@@ -1,8 +1,6 @@
-## react-tasks
-(React)
+# react-tasks
 
-
-Развернутое приложение на Github Pages: https://safym.github.io/react-tasks/
+## Github Pages: https://safym.github.io/react-tasks/
 
 ## Задача 1.
 
